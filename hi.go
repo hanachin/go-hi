@@ -5,9 +5,10 @@ import (
 	"math/rand"
 	"time"
 )
+import hi "fmt"
 
 func main() {
 	fmt.Printf("Hi\n")
-	fmt.Println("The time is", time.Now())
-	fmt.Println("My favorite number is", rand.Intn(10))
+	hi.Println("The time is", time.Now())
+	hi.Println("My favorite number is", rand.Intn(10))
 }
