@@ -18,8 +18,13 @@ func main() {
 	hi.Printf("Now you have %g problems.\n", math.Nextafter(2, 100))
 
 	fmt.Println(a(2, 5))
+	fmt.Println(s("Hello", "World"))
 }
 
 func a(x, y int) int {
 	return x + y
+}
+
+func s(x, y string) (string, string) {
+	return y, x
 }
