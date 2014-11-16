@@ -19,6 +19,7 @@ func main() {
 
 	fmt.Println(a(2, 5))
 	fmt.Println(s("Hello", "World"))
+	fmt.Println(divmod(9, 2))
 }
 
 func a(x, y int) int {
@@ -27,4 +28,10 @@ func a(x, y int) int {
 
 func s(x, y string) (string, string) {
 	return y, x
+}
+
+func divmod(a, b int) (q, r int) {
+	q = a / b
+	r = a % b
+	return
 }
