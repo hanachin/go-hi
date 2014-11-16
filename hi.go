@@ -16,4 +16,10 @@ func main() {
 	// same
 	hi.Printf("Now you have %g problems.\n", math.Nextafter(2, 3))
 	hi.Printf("Now you have %g problems.\n", math.Nextafter(2, 100))
+
+	fmt.Println(a(2, 5))
+}
+
+func a(x int, y int) int {
+	return x + y
 }
