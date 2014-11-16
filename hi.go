@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"time"
 )
@@ -11,4 +12,8 @@ func main() {
 	fmt.Printf("Hi\n")
 	hi.Println("The time is", time.Now())
 	hi.Println("My favorite number is", rand.Intn(10))
+
+	// same
+	hi.Printf("Now you have %g problems.\n", math.Nextafter(2, 3))
+	hi.Printf("Now you have %g problems.\n", math.Nextafter(2, 100))
 }
