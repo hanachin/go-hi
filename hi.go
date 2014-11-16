@@ -20,6 +20,6 @@ func main() {
 	fmt.Println(a(2, 5))
 }
 
-func a(x int, y int) int {
+func a(x, y int) int {
 	return x + y
 }
